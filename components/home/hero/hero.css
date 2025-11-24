@@ -1,0 +1,89 @@
+.hero-sec {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero {
+
+    width: min(50em, 60%);
+    margin-top: 10em;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4vw + 2rem, 4rem);
+    font-family: var(--font-space);
+    font-weight: 600;
+    line-height: 1.8em;
+}
+
+.span {
+    display: inline-block;
+    padding: 0 .6em;
+    border-radius: 100px;
+    margin: .15em .1em;
+    font-family: var(--font-display);
+}
+
+.span1 {
+    position: relative;
+    background-color: #cfbaf0;
+}
+
+.herogirl {
+    position: absolute;
+    width: 10em;
+    right: -96%;
+    top: -11%;
+    z-index: 10;
+}
+
+.span2 {
+    transform: rotate(2deg) translate(0);
+    background-color: #f8ad9d;
+    transition: transform .12s ease-in-out;
+}
+
+.span2:hover {
+    transform: rotate(-2deg) translate(0);
+}
+
+.spin {
+    font-size: clamp(2rem, 1vw + 1rem, 4rem);
+    padding: 0.5em;
+    margin-right: 0.4em;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #b9fbc0;
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        width: 80%;
+        margin-top: 5em;
+    }
+
+    .span {
+        margin: .01em .2em;
+    }
+
+    .hero-sec {
+        padding: 0.5em 1em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero {
+        width: 100%;
+    }
+
+    .span1 {
+        margin-left: 0.4em;
+    }
+}
