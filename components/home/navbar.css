@@ -1,12 +1,13 @@
 .navbar {
-    padding: .6em .5em .4em .5em;
+    padding: .6em .5em;
     position: relative;
+    max-height: 4rem;
 }
 
 .navbar::after {
     content: '';
     position: absolute;
-    bottom: -14%;
+    bottom: 0;
     left: 2.5%;
     width: 95%;
     height: .7px;
@@ -37,7 +38,7 @@
     transition: all .2s ease-in-out;
 }
 .nav-menu li:hover{
-    color: var(--simpbrown);
+    color: #414141;
 }
 .nav-menu li::after {
     content: '';
@@ -46,7 +47,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background: var(--simpbrown);
+    background: #414141;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform .3s ease-in-out;

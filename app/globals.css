@@ -8,7 +8,7 @@
 }
 
 :root {
-  --background: #ffffff;
+  --background: #faedcd;
   --foreground: #171717;
   --simpgreen: #8a9f4d;
   --simpbrown: #d4a373;
@@ -18,7 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #fefae0;
+    --background: #faedcd;
     --foreground: #171717;
   }
 }
@@ -28,12 +28,30 @@
   margin: 0;
   padding: 0;
 }
-/* 
-main {
-  width: 100%;
-} */
 
-html, body {
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -45,6 +63,6 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.home-sec1{
+.home-sec1 {
   padding: .2em .5em;
 }

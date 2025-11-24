@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SmoothScroll from "@/components/smoothScroll/SmoothScroll";
 import { Space_Grotesk, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
@@ -41,8 +42,11 @@ export default function RootLayout({
           text-black
         `}
       >
-        <Navbar />
-        <main >
+        <SmoothScroll />
+        <div className="fixed top-0 left-0 w-full z-50 bg-[#fefae0]">
+          <Navbar />
+        </div>
+        <main className="mt-16" >
           {children}
         </main>
       </body>
