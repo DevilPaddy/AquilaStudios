@@ -3,7 +3,7 @@
 @theme {
   --font-space: var(--font-space-grotesk);
   --font-display: var(--font-playfair);
-  --color-background: var(--background);
+  --font-inter: var(--font-inter) --color-background: var(--background);
   --color-foreground: var(--foreground);
 }
 
@@ -58,7 +58,56 @@ body {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-space);
+  font-family: var(--font-inter);
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
+}
+
+.section2 {
+  width: 100vw;
+  height: 100vh;
+  padding: .2em .5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-sec2 {
+  width: min(880px, 70%);
+}
+
+.title-txt-sec2 {
+  text-align: center;
+  font-size: clamp(2rem, 3em + 1rem, 4rem);
+  font-weight: 600;
+  font-family: var(--font-display);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.para-sec2 {
+  font-size: clamp(1rem, 2em + 1rem, 2rem);
+  text-wrap: wrap;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .section2 {
+    margin-top: 3em;
+  }
+
+  .text-sec2 {
+    width: 100%;
+  }
+
+  .title-txt-sec2 {
+    font-size: clamp(2rem, 2em + 1rem, 4rem);
+  }
+
+  .para-sec2 {
+    font-size: clamp(1rem, 1em + 1rem, 2rem);
+    font-weight: 500;
+    line-height: .8em;
+  }
 }

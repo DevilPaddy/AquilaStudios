@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import SmoothScroll from "@/components/smoothScroll/SmoothScroll";
-import { Space_Grotesk, Playfair_Display } from "next/font/google";
+import { Space_Grotesk, Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/home/Navbar";
+
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: "--font-inter", 
+  display: "swap"
+});
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -31,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${playfair.variable} scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${playfair.variable} scroll-smooth`}>
       <body
         className={`
           ${spaceGrotesk.variable}
