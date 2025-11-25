@@ -10,11 +10,11 @@ export default function () {
 
     const marqueeText = [
         <GiMoebiusStar />,
-        "We turn just a business into a brand people brag about.",
+        "We turn just a business into a brand people brag about",
         <LiaStarOfLifeSolid />,
-        "Making digital makeovers that your competitors cry over.",
+        "Making digital makeovers that your competitors cry over",
         <GiMoebiusStar />,
-        "We don’t create websites. We create customer magnets.",
+        "We don’t create websites. We create customer magnets",
     ];
 
     return (
@@ -23,9 +23,16 @@ export default function () {
                 <div className='hero'>
                     <div className="hero-txt">
                         <h4 className='hero-title'>
-                            <div className="spin">
+                            <motion.div
+                            animate={{rotate: 360}}
+                            transition={{
+                                duration: 10,
+                                ease: 'linear',
+                                repeat: Infinity,
+                            }}
+                            className="spin">
                                 <FaStarOfLife />
-                            </div>
+                            </motion.div>
                             Beyond the
                             <div className="span span1">
                                 <span className='span-txt'>Pixel.</span>
