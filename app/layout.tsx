@@ -43,7 +43,7 @@ export default function RootLayout({
         `}
       >
         <SmoothScroll />
-        <div className="fixed top-0 left-0 w-full z-50 bg-[#fefae0]">
+        <div className="fixed top-0 left-0 w-full z-50 bg-[#faedcd]">
           <Navbar />
         </div>
         <main className="mt-16" >

@@ -1,19 +1,30 @@
 .hero-sec {
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-.hero {
-
-    width: min(50em, 60%);
-    margin-top: 10em;
+.cover-hero {
+    width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: start;
+    flex-direction: column;
+    align-content: center;
+}
+
+.hero {
+    padding: .2em .5em;
+    width: 100%;
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 5em;
+}
+
+.hero-txt {
+    width: min(55em, 60%);
 }
 
 .hero-title {
@@ -63,10 +74,34 @@
     background-color: #b9fbc0;
 }
 
+.marquee {
+    height: 20em;
+}
+
+.marquee1 {
+    font-size: clamp(2rem, 2em + 1rem, 4rem);
+    background-color: #cfbaf0;
+    transform: rotate(2deg);
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.marquee2 {
+    font-size: clamp(2rem, 2em + 1rem, 4rem);
+    background-color: #f8ad9d;
+    transform: rotate(-2deg);
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
 @media screen and (max-width: 767px) {
-    .hero {
+    .hero-txt {
         width: 80%;
-        margin-top: 5em;
+    }
+
+    .hero {
+        margin-top: 8em;
+        margin-bottom: 1em;
     }
 
     .span {
@@ -79,11 +114,12 @@
 }
 
 @media screen and (max-width: 420px) {
-    .hero {
+    .hero-txt {
         width: 100%;
     }
 
     .span1 {
         margin-left: 0.2em;
     }
+
 }

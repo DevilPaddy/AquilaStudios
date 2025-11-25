@@ -1,5 +1,5 @@
 .navbar {
-    padding: .6em .5em;
+    padding: .6em .8em;
     position: relative;
     max-height: 4rem;
 }
@@ -8,8 +8,8 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 2.5%;
-    width: 95%;
+    left: 1.6%;
+    width: 97%;
     height: .7px;
     background-color: #000;
 }

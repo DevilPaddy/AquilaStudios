@@ -8,7 +8,7 @@
 }
 
 :root {
-  --background: #faedcd;
+  --background: #fefae0;
   --foreground: #171717;
   --simpgreen: #8a9f4d;
   --simpbrown: #d4a373;
@@ -18,7 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #faedcd;
+    --background: #fefae0;
     --foreground: #171717;
   }
 }
@@ -61,8 +61,4 @@ body {
   font-family: var(--font-space);
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
-}
-
-.home-sec1 {
-  padding: .2em .5em;
 }
