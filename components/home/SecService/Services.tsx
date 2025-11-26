@@ -58,7 +58,7 @@ export default function () {
             if (index === stickyCards.length - 1) return;
             const nextCard = stickyCards[index + 1];
 
-            const rotation = index % 2 === 0 ? 5 : -5;
+            // const rotation = index % 2 === 0 ? 5 : -5;
 
             gsap.to(card, {
                 scrollTrigger: {
