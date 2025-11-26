@@ -12,7 +12,7 @@ export default function () {
     <section className="home-sec1">
       <HeroSec />
 
-      <div className="breaker w-screen h-px bg-zinc-400"></div>
+      <div className="breaker w-screen h-[0.7px] bg-zinc-400"></div>
       <section className="section2">
         <div className="text-sec2">
           <h6 className="title-txt-sec2">
