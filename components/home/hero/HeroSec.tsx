@@ -37,7 +37,7 @@ export default function () {
                             <div className="span span1">
                                 <span className='span-txt'>Pixel.</span>
                                 <Image
-                                    src={'/hero/herogirl.png'}
+                                    src={'/hero/herogirl1.png'}
                                     alt='herogirl'
                                     width={0}
                                     height={0}
