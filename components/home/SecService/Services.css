@@ -1,0 +1,137 @@
+.sticky-cards {
+    position: relative;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-card {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #edccae;
+    color: black;
+    padding: 1.5rem;
+    display: flex;
+    gap: 3rem;
+    overflow: hidden;
+    transform-origin: center top;
+    will-change: transform, opacity;
+    margin: 0;
+}
+
+.sticky-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0);
+    /* opacity: var(0); */
+    transition: opacity 0.1s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.sticky-card-index {
+    flex: 2;
+}
+
+.sticky-card-content {
+    flex: 4;
+    padding-top: 1.5rem;
+}
+
+.sticky-card-content-wrapper {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sticky-card-title {
+    width: 75%;
+}
+
+.card-image {
+    aspect-ratio: 5/3;
+}
+
+.sticky-card-copy {
+    display: flex;
+    gap: 1rem;
+}
+
+.sticky-card-copy-title {
+    flex: 2;
+}
+
+.sticky-card-copy-description {
+    flex: 4;
+}
+
+.sticky-card-copy-title p {
+    text-transform: uppercase;
+    font-weight: 650;
+}
+
+/* text settings */
+
+.sticky-card-title {
+    font-size: clamp(1.2rem, 2em + .5rem, 3rem);
+    font-weight: 700;
+    text-align: start;
+}
+
+.sticky-card-index {
+    font-size: clamp(3rem, 2em + 5rem, 8rem);
+    font-weight: bolder;
+    text-align: start;
+}
+
+.sticky-card-copy-description p {
+    font-size: clamp(1rem, 1em +.5rem, 2rem);
+    font-weight: 500;
+    text-wrap: balance;
+    text-align: start;
+}
+
+.sticky-card-copy-title p {
+    font-size: clamp(1rem, 1em +.5rem, 2rem);
+    text-wrap: balance;
+    text-align: start;
+}
+
+@media screen and (max-width: 767px) {
+    .sticky-card {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sticky-card-content-wrapper {
+        width: 100%;
+    }
+
+    .sticky-card-copy {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sticky-card-index {
+        flex: 1;
+    }
+
+    .sticky-card-title {
+        font-size: clamp(1.2rem, 1em + .5rem, 2rem);
+        text-align: start;
+    }
+
+    .sticky-card-index {
+        font-size: clamp(2.4rem, 2em + 2rem, 8rem);
+        text-align: center;
+    }
+
+}

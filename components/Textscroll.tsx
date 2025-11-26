@@ -30,7 +30,7 @@ export default function ScrollTextReveal({ value }: { value: string }) {
     <p 
       ref={element} 
       // REMOVED "flex" and "flex-wrap". Now it acts like normal text.
-      className="text-zinc-800 leading-10"
+      className="text-zinc-800  md:leading-10"
     >
       {words.map((word, i) => {
         const start = i / words.length;

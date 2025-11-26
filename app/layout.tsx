@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import SmoothScroll from "@/components/smoothScroll/SmoothScroll";
 import { Space_Grotesk, Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
+import {ReactLenis} from "lenis/react"
 
 import Navbar from "@/components/home/Navbar";
 
@@ -48,7 +49,7 @@ export default function RootLayout({
           text-black
         `}
       >
-        <SmoothScroll />
+        <ReactLenis root />
         <div className="fixed top-0 left-0 w-full z-50 bg-[#faedcd]">
           <Navbar />
         </div>

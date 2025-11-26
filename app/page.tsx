@@ -2,6 +2,7 @@
 import HeroSec from "@/components/home/hero/HeroSec"
 import ScrollTextReveal from "@/components/Textscroll";
 import Typewriter from "@/components/Typewritter";
+import Services from "@/components/home/SecService/Services";
 
 export default function () {
 
@@ -27,8 +28,17 @@ export default function () {
         </div>
       </section>
 
-      <div className="breaker w-screen h-px bg-zinc-400 mt-[-2em]"></div>
+      <div className="w-screen mt-[-2em] bg-[#edccae]">
+        <h4 className="service-header">Our Services</h4>
+      </div>
+      
+      <section className="section-sticky-card">
+        <Services />
+      </section>
 
+      <section className="outro w-screen h-screen">
+        <h2>Hellow end</h2>
+      </section>
     </section>
   )
 }
