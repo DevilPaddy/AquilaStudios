@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import SmoothScroll from "@/components/smoothScroll/SmoothScroll";
 import { Space_Grotesk, Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import {ReactLenis} from "lenis/react"
