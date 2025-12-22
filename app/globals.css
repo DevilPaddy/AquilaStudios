@@ -29,6 +29,10 @@
   padding: 0;
 }
 
+::selection {
+  background: #cdb4db;
+}
+
 html.lenis,
 html.lenis body {
   height: auto;

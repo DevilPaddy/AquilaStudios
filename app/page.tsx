@@ -3,6 +3,7 @@ import HeroSec from "@/components/home/hero/HeroSec"
 import ScrollTextReveal from "@/components/Textscroll";
 import Typewriter from "@/components/Typewritter";
 import Services from "@/components/home/SecService/Services";
+import HorizontalScroll from "@/components/home/horizontalScroll/HorizontalScroll";
 
 export default function () {
 
@@ -36,8 +37,10 @@ export default function () {
         <Services />
       </section>
 
-      <section className="outro w-screen h-screen">
-        <h2>Hellow end</h2>
+      <HorizontalScroll />
+
+      <section className="h-screen">
+        <p>Footer content will start now...</p>
       </section>
     </section>
   )
